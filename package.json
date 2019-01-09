@@ -3,18 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-scripts": "2.1.3",
     "@jusfoun-vis/common": "^0.1.1",
     "@jusfoun-vis/relativism": "^0.1.3",
-    "@jusfoun-vis/scaler": "^0.1.5"
+    "@jusfoun-vis/scaler": "^0.1.5",
+    "animate.css": "^3.7.0",
+    "antd": "^3.12.1",
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "d3": "^5.7.0",
+    "echarts": "^4.2.0-rc.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "relate":"node ./src/relate.js",
+    "relate": "node ./src/relate.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

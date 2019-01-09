@@ -1,0 +1,50 @@
+
+.menu-list{
+    position: relative;
+    /* top: -32px; */
+    top: 0px;
+    /* transition: width .4s !important; */
+}
+.menu-container{
+    width: 200px;
+    position: relative;
+    top: 0px;
+    float: left;
+    height: 100%;
+    background: #1f2c35;
+    transition: width .1s;
+}
+.router-container{
+    float: left;
+    background: #0e0436;
+    height: 100%;
+    width: 1720px;
+    transition: width .1s;
+    color: #fff;
+}
+.toolbar{
+    height: 40px;
+    background: #fff;
+}
+.button-toggle{
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    z-index: 10;
+}
+ul.menu-List,.menu-List ul,.menu-List li,.menu-List li ul{
+    position: relative;
+    background: #1f2c35 !important;
+}
+.menu-container a,.menu-container li{
+    color: #fff !important;
+}
+.menu-container li.ant-menu-item-selected a{
+    color: #36a7df !important;
+}
+.menu-container li.ant-menu-item-selected{
+    color: #36a7df !important;
+}
+.menu-container a:focus{
+    text-decoration: none !important;
+}
