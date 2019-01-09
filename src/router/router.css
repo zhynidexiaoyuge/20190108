@@ -23,6 +23,8 @@
     color: #fff;
 }
 .toolbar{
+    position: relative;
+    left: 0px;
     height: 40px;
     background: #fff;
 }
