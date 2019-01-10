@@ -6,6 +6,8 @@ import PieChart from '../page/pie-chart/PieChart';
 import BarChart from '../page/bar-chart/BarChart';
 import LineChart from '../page/line-chart/LineChart';
 import RadarChart from '../page/radar-chart/RadarChart';
+// 星星
+import RunBall from '../component/run-abll/run-ball';
 import './router.css'
 
 const SubMenu = Menu.SubMenu;
@@ -75,6 +77,7 @@ class NavLinks extends Component{
                             <NavLink exact to={'/'}><Icon type="home" /></NavLink>
                         </Button>
                     </div>
+                    <RunBall />
                     <div>
                         <Route exact path="/" component={HomePage}></Route>
                         <Route path="/pieChart" component={PieChart}></Route>

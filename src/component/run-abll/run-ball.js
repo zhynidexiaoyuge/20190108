@@ -55,7 +55,7 @@ class EarthBall extends React.Component {
   render() {
     const me = this;
     return (
-      <div className="earth-wrapper">
+      <div className="earth-wrapper" style={{position: 'absolute',}}>
         <div className="earth-bg">
 
         </div>
