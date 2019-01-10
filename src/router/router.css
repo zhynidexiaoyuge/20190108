@@ -48,8 +48,8 @@ ul.menu-List,.menu-List ul,.menu-List li,.menu-List li ul{
     text-decoration: none !important;
 }
 .button-home{
-    position: absolute;
-    left: 20px;
+    position: absolute !important;
+    left: 66px;
     top: 0px;
     z-index: 10;
 }
