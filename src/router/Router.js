@@ -36,15 +36,7 @@ class NavLinks extends Component{
             <div style={{width:1920,height:1080}}>
                 <div className="menu-container" ref="menu-container">
                     <Menu className="menu-List" defaultSelectedKeys={['0']} theme="dark" defaultOpenKeys={['sub1']}mode="inline"inlineCollapsed={this.state.collapsed}>
-                        {/* <Menu.Item key="1">
-                            <Icon type="pie-chart" />
-                            <span><NavLink exact to={'/pieChart'}>Option 1</NavLink></span>
-                        </Menu.Item>
-                        <Menu.Item key="2">
-                            <Icon type="desktop" />
-                            <span><NavLink exact to={'/'}>Option 2</NavLink></span>
-                        </Menu.Item> */}
-                        <SubMenu key="sub1" title={<span><Icon type="folder-open" /><span>echarts</span></span>}>
+                        <SubMenu key="sub1" title={<span><Icon type="folder" /><span>echarts</span></span>}>
                             <Menu.Item key="1">
                                 <Icon type="pie-chart" />
                                 <span><NavLink exact to={'/pieChart'}>pieChart</NavLink></span>
@@ -62,7 +54,7 @@ class NavLinks extends Component{
                                 <span><NavLink exact to={'/radarChart'}>radarChart</NavLink></span>
                             </Menu.Item>
                         </SubMenu>
-                        <SubMenu key="sub2" title={<span><Icon type="folder-open" /><span>d3</span></span>}>
+                        <SubMenu key="sub2" title={<span><Icon type="folder" /><span>d3</span></span>}>
                             
                         </SubMenu>
                     </Menu>
