@@ -87,8 +87,8 @@ class NavLinks extends Component{
         )
     }
     componentWillMount(){
-        // let reg = /(.+\/)/g;
-        console.log( window.location.href )
+        let reg = /(.+\/)/g;
+        console.log( window.location.href.match(reg)[0] )
         // let url = window.location.href.match(reg);
         // let urlName = window.location.href.slice(window.location.href.match(reg)[0].length,window.location.href.length-1);
         // // console.log()
