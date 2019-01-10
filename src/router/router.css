@@ -16,11 +16,12 @@
 }
 .router-container{
     float: left;
+    position: relative;
     /* background: #0e0436; */
-    background: url('/static/img/bg.png') no-repeat;
+    background: url('/static/img/bg-1.png') no-repeat;
     background-size:100% 100%;
     height: 100%;
-    width: 1720px;
+    width: 2800px;
     transition: width .1s;
     color: #fff;
 }
@@ -41,14 +42,20 @@ ul.menu-List,.menu-List ul,.menu-List li,.menu-List li ul{
     background: #1f2c35 !important;
 }
 .menu-container a,.menu-container li{
-    color: #fff !important;
-}
-.menu-container li.ant-menu-item-selected a{
-    color: #36a7df !important;
-}
-.menu-container li.ant-menu-item-selected{
-    color: #36a7df !important;
+    color: #fff;
 }
 .menu-container a:focus{
     text-decoration: none !important;
+}
+.button-home{
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    z-index: 10;
+}
+li.itemSelected {
+    color: #36a7df !important;
+}
+li.itemSelected a{
+    color: #36a7df;
 }

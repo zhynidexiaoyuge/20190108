@@ -8,7 +8,7 @@ import './App.css';
 class App extends Component {
   render() {
     let me = this;
-    const width = 1920;
+    const width = 3000;
     const height = 1080;
     const mode = window.resizeMode || ResizeManager.MODE_DEBUG;
     return (

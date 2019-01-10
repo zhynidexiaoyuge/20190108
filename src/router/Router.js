@@ -15,41 +15,48 @@ class NavLinks extends Component{
         super(props)
         this.state = {
             collapsed: false,
+            name:'homePage'
         }
+        this.sessionStorage = window.sessionStorage;
+        this.sessionStorage.setItem('name',this.state.name)
     }
     toggleCollapsed = () => {
         const me = this;
         if(me.state.collapsed===false){
             me.refs['menu-container'].style.width = 80+'px';
-            me.refs['router-container'].style.width = 1840+'px';
+            me.refs['router-container'].style.width = 2920+'px';
         }else{
-            me.refs['router-container'].style.width = 1720+'px';
+            me.refs['router-container'].style.width = 2800+'px';
             me.refs['menu-container'].style.width = 200+'px';
         }
-        
         this.setState({
           collapsed: !me.state.collapsed,
         });
     }
+    _navClick(t){
+        this.setState({
+            name: t,
+        });
+    }
     render(){
         return (
-            <div style={{width:1920,height:1080}}>
+            <div style={{width:3000,height:1080}}>
                 <div className="menu-container" ref="menu-container">
                     <Menu className="menu-List" defaultSelectedKeys={['0']} theme="dark" defaultOpenKeys={['sub1']}mode="inline"inlineCollapsed={this.state.collapsed}>
                         <SubMenu key="sub1" title={<span><Icon type="folder" /><span>echarts</span></span>}>
-                            <Menu.Item key="1">
+                            <Menu.Item key="1" className={this.state.name=='pieChart'? 'itemSelected': ''} onClick={this._navClick.bind(this,'pieChart')}>
                                 <Icon type="pie-chart" />
                                 <span><NavLink exact to={'/pieChart'}>pieChart</NavLink></span>
                             </Menu.Item>
-                            <Menu.Item key="2">
+                            <Menu.Item key="2" className={this.state.name=='barChart'? 'itemSelected': ''} onClick={this._navClick.bind(this,'barChart')}>
                                 <Icon type="bar-chart" />
                                 <span><NavLink exact to={'/barChart'}>barChart</NavLink></span>
                             </Menu.Item>
-                            <Menu.Item key="3">
+                            <Menu.Item key="3" className={this.state.name=='lineChart'? 'itemSelected': ''} onClick={this._navClick.bind(this,'lineChart')}>
                                 <Icon type="line-chart" />
                                 <span><NavLink exact to={'/lineChart'}>lineChart</NavLink></span>
                             </Menu.Item>
-                            <Menu.Item key="4">
+                            <Menu.Item key="4" className={this.state.name=='radarChart'? 'itemSelected': ''} onClick={this._navClick.bind(this,'radarChart')}>
                                 <Icon type="radar-chart" />
                                 <span><NavLink exact to={'/radarChart'}>radarChart</NavLink></span>
                             </Menu.Item>
@@ -64,6 +71,9 @@ class NavLinks extends Component{
                         <Button type="primary" onClick={this.toggleCollapsed} className="button-toggle">
                             <Icon type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'} />
                         </Button>
+                        <Button type="primary" onClick={this._navClick.bind(this,'homePage')} className="button-home">
+                            <NavLink exact to={'/'}><Icon type="home" /></NavLink>
+                        </Button>
                     </div>
                     <div>
                         <Route exact path="/" component={HomePage}></Route>
@@ -75,6 +85,16 @@ class NavLinks extends Component{
                 </div>
             </div> 
         )
+    }
+    componentWillMount(){
+        // let reg = /(.+\/)/g;
+        console.log( window.location.href )
+        // let url = window.location.href.match(reg);
+        // let urlName = window.location.href.slice(window.location.href.match(reg)[0].length,window.location.href.length-1);
+        // // console.log()
+        // if(window.location.href!=='http://localhost:3000/'){
+        //     window.location.href="http://localhost:3000/"
+        // }
     }
 }
 export default NavLinks;
