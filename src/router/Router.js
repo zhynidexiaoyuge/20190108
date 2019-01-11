@@ -6,6 +6,7 @@ import PieChart from '../page/pie-chart/PieChart';
 import BarChart from '../page/bar-chart/BarChart';
 import LineChart from '../page/line-chart/LineChart';
 import RadarChart from '../page/radar-chart/RadarChart';
+import List from '../page/list/List';
 // 星星
 import RunBall from '../component/run-abll/run-ball';
 import './router.css'
@@ -66,6 +67,10 @@ class NavLinks extends Component{
                         <SubMenu key="sub2" title={<span><Icon type="folder" /><span>d3</span></span>}>
                             
                         </SubMenu>
+                        <Menu.Item key="3">
+                            <Icon type="ordered-list" />
+                            <span><NavLink exact to={'/list'}>list</NavLink></span>
+                        </Menu.Item>
                     </Menu>
                 </div>
                 <div className="router-container" ref="router-container">
@@ -84,6 +89,7 @@ class NavLinks extends Component{
                         <Route path="/barChart" component={BarChart}></Route>
                         <Route path="/lineChart" component={LineChart}></Route>
                         <Route path="/radarChart" component={RadarChart}></Route>
+                        <Route path="/list" component={List}></Route>
                     </div>
                 </div>
             </div> 

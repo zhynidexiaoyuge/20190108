@@ -59,3 +59,6 @@ li.itemSelected {
 li.itemSelected a{
     color: #36a7df;
 }
+.ant-menu-item span{
+    color: #fff;
+}
