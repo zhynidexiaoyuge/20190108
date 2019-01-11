@@ -67,7 +67,7 @@ class NavLinks extends Component{
                         <SubMenu key="sub2" title={<span><Icon type="folder" /><span>d3</span></span>}>
                             
                         </SubMenu>
-                        <Menu.Item key="3">
+                        <Menu.Item key="3" className={this.state.name=='list'? 'itemSelected': ''} onClick={this._navClick.bind(this,'list')}>
                             <Icon type="ordered-list" />
                             <span><NavLink exact to={'/list'}>list</NavLink></span>
                         </Menu.Item>

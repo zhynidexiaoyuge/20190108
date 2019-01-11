@@ -54,6 +54,7 @@ ul.menu-List,.menu-List ul,.menu-List li,.menu-List li ul{
     z-index: 10;
 }
 li.itemSelected {
+    /* background: #1890ff !important; */
     color: #36a7df !important;
 }
 li.itemSelected a{
@@ -62,3 +63,4 @@ li.itemSelected a{
 .ant-menu-item span{
     color: #fff;
 }
+li{ cursor: default !important;}
