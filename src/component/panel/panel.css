@@ -1,0 +1,35 @@
+.panel-box{
+    /* background: #f0f; */
+    padding-top: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.panel-children{
+    position: relative;
+}
+.panel-title{
+    position: absolute;
+    color: #7eddfb;
+    top: 0px;
+    font-size: 14px;
+}
+.panel-border-top{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    z-index: 0;
+    background: url('./borderBgc.png') no-repeat;
+    background-size: 100% 100%; 
+    transform: rotateX(180deg);
+    /* background: linear-gradient(to right, rgba(13, 65, 251, 1), rgba(13, 65, 251, 1), rgba(13, 65, 251, 0) 50%, rgba(13, 65, 251, 0), rgba(13, 65, 251, 0), rgba(13, 65, 251, 0), rgba(13, 65, 251, 1) 70%); */
+}
+.panel-border-bottom{
+    position: absolute;
+    z-index: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+    background: url('./borderBgc.png') no-repeat;
+    background-size: 100% 100%; 
+}
