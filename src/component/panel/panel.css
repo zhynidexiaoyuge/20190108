@@ -5,7 +5,8 @@
     overflow: hidden;
 }
 .panel-children{
-    position: relative;
+    position: absolute;
+    z-index: 1;
 }
 .panel-title{
     position: absolute;
@@ -15,7 +16,7 @@
 }
 .panel-border-top{
     position: absolute;
-    top: 0px;
+    top: -20px;
     width: 100%;
     height: 80px;
     z-index: 0;
@@ -27,7 +28,7 @@
 .panel-border-bottom{
     position: absolute;
     z-index: 0;
-    bottom: 0px;
+    bottom: -20px;
     width: 100%;
     height: 80px;
     background: url('./borderBgc.png') no-repeat;
