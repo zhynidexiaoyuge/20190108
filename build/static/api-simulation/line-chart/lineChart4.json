@@ -1,0 +1,30 @@
+{
+    "code": -1,
+    "success": true,
+    "data": [
+        {
+            "dateKey": "20190219",
+            "touristNum": "51222"
+        },
+        {
+            "dateKey": "20190220",
+            "touristNum": "59931"
+        },
+        {
+            "dateKey": "20190222",
+            "touristNum": "44526"
+        },
+        {
+            "dateKey": "20190223",
+            "touristNum": "37768"
+        },
+        {
+            "dateKey": "20190224",
+            "touristNum": "31272"
+        },
+        {
+            "dateKey": "20190225",
+            "touristNum": "31032"
+        }
+    ]
+}
