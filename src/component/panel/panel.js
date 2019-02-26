@@ -6,7 +6,7 @@ class Panel extends Component{
         return (
             <div style={{
                 position:'absolute',
-                width:me.props.width||500,
+                width:me.props.width||900,
                 height:me.props.height||320,
                 left:me.props.left||20,
                 top:me.props.top||0
