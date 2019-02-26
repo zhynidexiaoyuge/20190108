@@ -1,9 +1,9 @@
 import React from 'react';
 import echarts from 'echarts';
-import icon1 from './series1.png';
-import icon2 from './series2.png';
-import icon3 from './series3.png'
-import icon4 from './series4.png'
+import icon1 from './img/series1.png';
+import icon2 from './img/series2.png';
+import icon3 from './img/series3.png'
+import icon4 from './img/series4.png'
 class Line extends React.Component {
   constructor(props) {
     super(props);

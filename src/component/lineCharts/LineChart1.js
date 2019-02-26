@@ -1,6 +1,6 @@
 import React from 'react';
 import echarts from 'echarts';
-import bgs from './bg.png';
+import bgs from './img/bg.png';
 class Line extends React.Component {
   constructor(props) {
     super(props)

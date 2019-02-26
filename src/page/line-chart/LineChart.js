@@ -5,6 +5,8 @@ import Line1 from '../../component/lineCharts/LineChart1';
 import Line2 from '../../component/lineCharts/LineChart2';
 import Line3 from '../../component/lineCharts/LineChart3';
 import Line4 from '../../component/lineCharts/LineChart4';
+import Line5 from '../../component/lineCharts/LineChart5';
+import Line6 from '../../component/lineCharts/LineChart6';
 class Test extends Component{
     constructor(props) {
         super(props);
@@ -26,6 +28,12 @@ class Test extends Component{
                 </Panel>
                 <Panel title={'line-chart4'} top={20} left={900}>
                     <Line4 width={800} height={300} yaxisName={"单位：万人次"}lineColor="#54effb"areaStart="rgba(18,255,255,1)"areaEnd="rgba(18,255,255,0)"arrow={1}dataZoom={1} ref={'chart4'}/>
+                </Panel>
+                <Panel title={'line-chart5'} top={360} left={900}>
+                    <Line5 ref="chart5"width={795}height={240}arrow={1}/>
+                </Panel>
+                <Panel title={'line-chart6'} top={700} left={900}>
+                    <Line6 ref="chart5"width={795}height={340}ref="chart6" title={'人次'} dataZoom={[]}/>
                 </Panel>
             </div>
         )
@@ -76,7 +84,7 @@ class Test extends Component{
                 console.error('出现异常', e);
               }
         }));
-         // chart4
+        // chart4
         me._tokens.push(api.chart4.send({}).then(res => {
             if (!res.success) return;
             let arr = { data: [], dataDate: [] };
@@ -88,6 +96,53 @@ class Test extends Component{
               arr.dataDate.push(time);
             });
             me.refs.chart4._setData(arr);
+          }));
+        // chart5
+        me._tokens.push(api.chart5.send({}).then(res => {
+            if (!res.suc) return;
+            let nowTime = res.now;
+            let arr = { dataX: [], data: [{ data1: [], data2: [] }] };
+            let n;
+            res.obj.map((s, i) => {
+                arr.dataX.push(`${s.dateKey.slice(-2)}:00`);
+                if (Number(s.dateKey) <= Number(nowTime)) {
+                arr.data[0].data1.push(s.comfortIndex);
+                arr.data[0].data2.push("");
+                n = i;
+                } else {
+                arr.data[0].data1.push("");
+                arr.data[0].data2.push(s.comfortIndex);
+                }
+            });
+            arr.name = ['应县塔姆'];
+            arr.data[0].data2.splice(n, 1, arr.data[0].data1[n]);
+            me.refs.chart5._setData(arr);
+          }));
+        // chart6
+        me._tokens.push(api.chart6.send({}).then(res => {
+            let dataArr = []
+            dataArr.push({
+                name: '男性',
+                data: []
+            }, {
+                name: '女性',
+                data: []
+            })
+            res.data.reverse().map(s => {
+                let time = s.time;
+                if(s.time.slice(s.time.indexOf(':')+1)==0){
+                    time = s.time.slice(0,s.time.indexOf(':'))+':00'
+                }
+                dataArr[0].data.push({
+                dataKey: time,
+                value: s.summale
+                })
+                dataArr[1].data.push({
+                dataKey: time,
+                value: s.sumfemale
+                })
+            })
+            me.refs.chart6._setData(dataArr);
           }));
     }
 

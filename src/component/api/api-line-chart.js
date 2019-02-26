@@ -23,3 +23,18 @@ export const chart4 = builder.build({
   simulation: true,
   simulator: 'static/api-simulation/line-chart/lineChart4.json'
 });
+
+export const chart5 = builder.build({
+  baseUrl: builder.BASEURL_01,
+  url: '/',
+  method: 'GET',
+  simulation: true,
+  simulator: 'static/api-simulation/line-chart/lineChart5.json'
+});
+export const chart6 = builder.build({
+  baseUrl: builder.BASEURL_01,
+  url: '/',
+  method: 'GET',
+  simulation: true,
+  simulator: 'static/api-simulation/line-chart/lineChart6.json'
+});
