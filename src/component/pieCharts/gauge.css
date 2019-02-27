@@ -1,0 +1,50 @@
+.comBox {
+  position:relative;
+
+
+}
+.dashBoard{
+  position:absolute;
+  z-index: 99;
+}
+.pointerPic{
+  position:absolute;
+  width:65px;
+  height:42px;
+  left:318px;
+  top:100px;
+  background:url('/static/image/share-exchange/zhizhen.png') no-repeat center;
+  transform-origin: left bottom;
+  transform:rotate(166deg);
+}
+.dataDepartment,.collectDepartment{
+  font-size:16px;
+  color:#02f4ff;
+  width:160px;
+  height:40px;
+  text-align: center;
+  line-height: 40px;
+  position:absolute;
+  z-index:100;
+  cursor: pointer;
+}
+.dataDepartment{
+  /*background:url("/static/image/share-exchange/selected.png") no-repeat center;*/
+  top:74px;
+  left:20px;
+}
+.collectDepartment{
+  /*background:url("/static/image/share-exchange/unselect.png") no-repeat center;*/
+  top:132px;
+  left:20px;
+}
+.selected{
+  width:160px;
+  height:40px;
+  background:url("/static/image/share-exchange/selected.png") no-repeat center;
+}
+.unselect{
+  width:160px;
+  height:40px;
+  background:url("/static/image/share-exchange/unselect.png") no-repeat center;
+}

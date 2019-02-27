@@ -1,0 +1,9 @@
+.tj_title{
+  width:100%;
+  height:22px;
+  font-size:18px;
+  color:#00fffc;
+  background:url('/static/img/circle.png') no-repeat left center;
+  padding-left:20px;
+  margin-left:20px;
+}
