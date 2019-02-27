@@ -1,0 +1,36 @@
+{
+    "code": 1,
+    "msg": "success",
+    "data": [
+        {
+            "name": "外企",
+            "value": "430",
+            "valueUnit": null
+        },
+        {
+            "name": "民企",
+            "value": "123",
+            "valueUnit": null
+        },
+        {
+            "name": "国企",
+            "value": "49",
+            "valueUnit": null
+        },
+        {
+            "name": "公务员",
+            "value": "43",
+            "valueUnit": null
+        },
+        {
+            "name": "事业单位",
+            "value": "33",
+            "valueUnit": null
+        },
+        {
+            "name": "合资",
+            "value": "23",
+            "valueUnit": null
+        }
+    ]
+}

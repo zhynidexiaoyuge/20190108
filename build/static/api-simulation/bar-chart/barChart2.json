@@ -1,0 +1,66 @@
+{
+    "code": null,
+    "message": null,
+    "data": [
+        {
+            "new_user": 4971,
+            "t": "02-15",
+            "his_user": 1946
+        },
+        {
+            "new_user": 3415,
+            "t": "02-16",
+            "his_user": 1686
+        },
+        {
+            "new_user": 2915,
+            "t": "02-17",
+            "his_user": 1445
+        },
+        {
+            "new_user": 3778,
+            "t": "02-18",
+            "his_user": 1830
+        },
+        {
+            "new_user": 3264,
+            "t": "02-19",
+            "his_user": 1667
+        },
+        {
+            "new_user": 2760,
+            "t": "02-20",
+            "his_user": 1575
+        },
+        {
+            "new_user": 3009,
+            "t": "02-21",
+            "his_user": 1745
+        },
+        {
+            "new_user": 3085,
+            "t": "02-22",
+            "his_user": 1651
+        },
+        {
+            "new_user": 3021,
+            "t": "02-23",
+            "his_user": 1681
+        },
+        {
+            "new_user": 3036,
+            "t": "02-24",
+            "his_user": 1571
+        },
+        {
+            "new_user": 2891,
+            "t": "02-25",
+            "his_user": 1552
+        },
+        {
+            "new_user": 2589,
+            "t": "02-26",
+            "his_user": 1622
+        }
+    ]
+}
