@@ -69,7 +69,7 @@ class Test extends Component{
     componentDidMount(){
         const me = this;
         // chart1
-        me._tokens.push(api.barchart1.send({
+        me._tokens.push(api.chart1.send({
         }).then(res => {
             let data = [];
             res.data.forEach(s => {
@@ -81,7 +81,7 @@ class Test extends Component{
             me.refs.barChart1._setData(data.reverse());
         }));
         // chart2
-        me._tokens.push(api.barchart2.send({
+        me._tokens.push(api.chart2.send({
         }).then(res => {
             let data = {
                 oldP: [],
@@ -108,12 +108,12 @@ class Test extends Component{
         }));
 
         // chart3
-        me._tokens.push(api.barchart3.send({
+        me._tokens.push(api.chart3.send({
         }).then(res => {
             me.refs.barChart3._setData(res.data)
         }));
         // chart4
-        me._tokens.push(api.barchart4.send({
+        me._tokens.push(api.chart4.send({
         }).then(res => {
             let ShapeBarData = {
                 xAxis: res.data.map((t) => { return t.name }),
@@ -122,12 +122,12 @@ class Test extends Component{
               me.refs.barChart4._setData(ShapeBarData)
         }));
          // chart5
-        me._tokens.push(api.barchart5.send({
+        me._tokens.push(api.chart5.send({
         }).then(res => {
             me.refs.barChart5._setData(res.data)
         }));
         // chart6
-        me._tokens.push(api.barchart6.send({
+        me._tokens.push(api.chart6.send({
         }).then(res => {
             let seriesName = [], seriesData = []
             res.data.sort(function (a, b) {
@@ -143,7 +143,7 @@ class Test extends Component{
             me.refs.barChart6._setData(data)
         }));
         // chart7
-        me._tokens.push(api.barchart7.send({
+        me._tokens.push(api.chart7.send({
         }).then(res => {
             let valueTlist = Object.values(res.data.valueTList[0]);//传统行业
             let xData = res.data.yearsList;
@@ -157,7 +157,7 @@ class Test extends Component{
             })
         }));
          // chart8
-        me._tokens.push(api.barchart8.send({
+        me._tokens.push(api.chart8.send({
         }).then(res => {
             let xAxisData = [], seriesData = [];
             res.data.map(item => {

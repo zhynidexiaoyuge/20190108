@@ -1,6 +1,6 @@
 import builder from './api-common';
 
-export const barchart1 = builder.build({
+export const chart1 = builder.build({
   baseUrl: builder.BASEURL_01,
   url: '/',
   method: 'GET',
@@ -8,7 +8,7 @@ export const barchart1 = builder.build({
   simulator: 'static/api-simulation/bar-chart/barChart1.json'
 });
 
-export const barchart2 = builder.build({
+export const chart2 = builder.build({
   baseUrl: builder.BASEURL_01,
   url: '/',
   method: 'GET',
@@ -16,7 +16,7 @@ export const barchart2 = builder.build({
   simulator: 'static/api-simulation/bar-chart/barChart2.json'
 });
 
-export const barchart3 = builder.build({
+export const chart3 = builder.build({
   baseUrl: builder.BASEURL_01,
   url: '/',
   method: 'GET',
@@ -24,35 +24,35 @@ export const barchart3 = builder.build({
   simulator: 'static/api-simulation/bar-chart/barchart3.json'
 });
 
-export const barchart4 = builder.build({
+export const chart4 = builder.build({
   baseUrl: builder.BASEURL_01,
   url: '/',
   method: 'GET',
   simulation: true,
   simulator: 'static/api-simulation/bar-chart/barchart4.json'
 });
-export const barchart5 = builder.build({
+export const chart5 = builder.build({
   baseUrl: builder.BASEURL_01,
   url: '/',
   method: 'GET',
   simulation: true,
   simulator: 'static/api-simulation/bar-chart/barchart5.json'
 });
-export const barchart6 = builder.build({
+export const chart6 = builder.build({
   baseUrl: builder.BASEURL_01,
   url: '/',
   method: 'GET',
   simulation: true,
   simulator: 'static/api-simulation/bar-chart/barchart6.json'
 });
-export const barchart7 = builder.build({
+export const chart7 = builder.build({
   baseUrl: builder.BASEURL_01,
   url: '/',
   method: 'GET',
   simulation: true,
   simulator: 'static/api-simulation/bar-chart/barchart7.json'
 });
-export const barchart8 = builder.build({
+export const chart8 = builder.build({
   baseUrl: builder.BASEURL_01,
   url: '/',
   method: 'GET',
