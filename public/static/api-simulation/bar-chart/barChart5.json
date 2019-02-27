@@ -1,0 +1,103 @@
+{
+    "suc": "1",
+    "msg": "查询成功",
+    "obj": [
+        {
+            "dateKey": "2019022521",
+            "comfortIndex": 63
+        },
+        {
+            "dateKey": "2019022522",
+            "comfortIndex": 63
+        },
+        {
+            "dateKey": "2019022523",
+            "comfortIndex": 63
+        },
+        {
+            "dateKey": "2019022600",
+            "comfortIndex": 51
+        },
+        {
+            "dateKey": "2019022601",
+            "comfortIndex": 50
+        },
+        {
+            "dateKey": "2019022602",
+            "comfortIndex": 50
+        },
+        {
+            "dateKey": "2019022603",
+            "comfortIndex": 50
+        },
+        {
+            "dateKey": "2019022604",
+            "comfortIndex": 50
+        },
+        {
+            "dateKey": "2019022605",
+            "comfortIndex": 50
+        },
+        {
+            "dateKey": "2019022606",
+            "comfortIndex": 62
+        },
+        {
+            "dateKey": "2019022607",
+            "comfortIndex": 50
+        },
+        {
+            "dateKey": "2019022608",
+            "comfortIndex": 50
+        },
+        {
+            "dateKey": "2019022609",
+            "comfortIndex": 48
+        },
+        {
+            "dateKey": "2019022610",
+            "comfortIndex": 47
+        },
+        {
+            "dateKey": "2019022611",
+            "comfortIndex": 35
+        },
+        {
+            "dateKey": "2019022612",
+            "comfortIndex": 35
+        },
+        {
+            "dateKey": "2019022613",
+            "comfortIndex": 34
+        },
+        {
+            "dateKey": "2019022614",
+            "comfortIndex": 61
+        },
+        {
+            "dateKey": "2019022615",
+            "comfortIndex": 43
+        },
+        {
+            "dateKey": "2019022616",
+            "comfortIndex": 53
+        },
+        {
+            "dateKey": "2019022617",
+            "comfortIndex": 69
+        },
+        {
+            "dateKey": "2019022618",
+            "comfortIndex": 64
+        },
+        {
+            "dateKey": "2019022619",
+            "comfortIndex": 60
+        },
+        {
+            "dateKey": "2019022620",
+            "comfortIndex": 41
+        }
+    ],
+    "now": "2019022618"
+}

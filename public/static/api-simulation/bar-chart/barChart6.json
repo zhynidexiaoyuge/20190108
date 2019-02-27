@@ -1,0 +1,41 @@
+{
+    "code": null,
+    "message": null,
+    "data": [
+        {
+            "sumfemale": 0,
+            "time": "18:50",
+            "summale": 0
+        },
+        {
+            "sumfemale": 0,
+            "time": "18:40",
+            "summale": 0
+        },
+        {
+            "sumfemale": 0,
+            "time": "18:30",
+            "summale": 0
+        },
+        {
+            "sumfemale": 0,
+            "time": "18:20",
+            "summale": 0
+        },
+        {
+            "sumfemale": 0,
+            "time": "18:10",
+            "summale": 0
+        },
+        {
+            "sumfemale": 0,
+            "time": "18:0",
+            "summale": 0
+        },
+        {
+            "sumfemale": 7,
+            "time": "17:50",
+            "summale": 4
+        }
+    ]
+}
