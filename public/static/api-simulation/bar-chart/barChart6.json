@@ -1,41 +1,36 @@
 {
-    "code": null,
-    "message": null,
+    "code": 1,
+    "msg": "success",
     "data": [
         {
-            "sumfemale": 0,
-            "time": "18:50",
-            "summale": 0
+            "name": "外企",
+            "value": "430",
+            "valueUnit": null
         },
         {
-            "sumfemale": 0,
-            "time": "18:40",
-            "summale": 0
+            "name": "民企",
+            "value": "123",
+            "valueUnit": null
         },
         {
-            "sumfemale": 0,
-            "time": "18:30",
-            "summale": 0
+            "name": "国企",
+            "value": "49",
+            "valueUnit": null
         },
         {
-            "sumfemale": 0,
-            "time": "18:20",
-            "summale": 0
+            "name": "公务员",
+            "value": "43",
+            "valueUnit": null
         },
         {
-            "sumfemale": 0,
-            "time": "18:10",
-            "summale": 0
+            "name": "事业单位",
+            "value": "33",
+            "valueUnit": null
         },
         {
-            "sumfemale": 0,
-            "time": "18:0",
-            "summale": 0
-        },
-        {
-            "sumfemale": 7,
-            "time": "17:50",
-            "summale": 4
+            "name": "合资",
+            "value": "23",
+            "valueUnit": null
         }
     ]
 }

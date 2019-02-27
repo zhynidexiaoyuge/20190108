@@ -38,3 +38,24 @@ export const barchart5 = builder.build({
   simulation: true,
   simulator: 'static/api-simulation/bar-chart/barchart5.json'
 });
+export const barchart6 = builder.build({
+  baseUrl: builder.BASEURL_01,
+  url: '/',
+  method: 'GET',
+  simulation: true,
+  simulator: 'static/api-simulation/bar-chart/barchart6.json'
+});
+export const barchart7 = builder.build({
+  baseUrl: builder.BASEURL_01,
+  url: '/',
+  method: 'GET',
+  simulation: true,
+  simulator: 'static/api-simulation/bar-chart/barchart7.json'
+});
+export const barchart8 = builder.build({
+  baseUrl: builder.BASEURL_01,
+  url: '/',
+  method: 'GET',
+  simulation: true,
+  simulator: 'static/api-simulation/bar-chart/barchart8.json'
+});

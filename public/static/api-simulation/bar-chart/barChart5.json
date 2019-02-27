@@ -1,103 +1,41 @@
 {
-    "suc": "1",
-    "msg": "查询成功",
-    "obj": [
+    "code": 1,
+    "msg": "success",
+    "data": [
         {
-            "dateKey": "2019022521",
-            "comfortIndex": 63
+            "name": "林业",
+            "value": "300",
+            "valueUnit": null
         },
         {
-            "dateKey": "2019022522",
-            "comfortIndex": 63
+            "name": "服务业",
+            "value": "212",
+            "valueUnit": null
         },
         {
-            "dateKey": "2019022523",
-            "comfortIndex": 63
+            "name": "农业",
+            "value": "200",
+            "valueUnit": null
         },
         {
-            "dateKey": "2019022600",
-            "comfortIndex": 51
+            "name": "重工业",
+            "value": "125",
+            "valueUnit": null
         },
         {
-            "dateKey": "2019022601",
-            "comfortIndex": 50
+            "name": "建筑",
+            "value": "123",
+            "valueUnit": null
         },
         {
-            "dateKey": "2019022602",
-            "comfortIndex": 50
+            "name": "化工",
+            "value": "119",
+            "valueUnit": null
         },
         {
-            "dateKey": "2019022603",
-            "comfortIndex": 50
-        },
-        {
-            "dateKey": "2019022604",
-            "comfortIndex": 50
-        },
-        {
-            "dateKey": "2019022605",
-            "comfortIndex": 50
-        },
-        {
-            "dateKey": "2019022606",
-            "comfortIndex": 62
-        },
-        {
-            "dateKey": "2019022607",
-            "comfortIndex": 50
-        },
-        {
-            "dateKey": "2019022608",
-            "comfortIndex": 50
-        },
-        {
-            "dateKey": "2019022609",
-            "comfortIndex": 48
-        },
-        {
-            "dateKey": "2019022610",
-            "comfortIndex": 47
-        },
-        {
-            "dateKey": "2019022611",
-            "comfortIndex": 35
-        },
-        {
-            "dateKey": "2019022612",
-            "comfortIndex": 35
-        },
-        {
-            "dateKey": "2019022613",
-            "comfortIndex": 34
-        },
-        {
-            "dateKey": "2019022614",
-            "comfortIndex": 61
-        },
-        {
-            "dateKey": "2019022615",
-            "comfortIndex": 43
-        },
-        {
-            "dateKey": "2019022616",
-            "comfortIndex": 53
-        },
-        {
-            "dateKey": "2019022617",
-            "comfortIndex": 69
-        },
-        {
-            "dateKey": "2019022618",
-            "comfortIndex": 64
-        },
-        {
-            "dateKey": "2019022619",
-            "comfortIndex": 60
-        },
-        {
-            "dateKey": "2019022620",
-            "comfortIndex": 41
+            "name": "制造业",
+            "value": "111",
+            "valueUnit": null
         }
-    ],
-    "now": "2019022618"
+    ]
 }
