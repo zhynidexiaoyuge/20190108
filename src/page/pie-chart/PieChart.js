@@ -8,6 +8,11 @@ import Pie4 from '../../component/pieCharts/pieChart4';
 import Pie5 from '../../component/pieCharts/pieChart5';
 import SummaryResults from '../../component/resourceStatus/ResourceStatus';
 import BrainDrain from '../../component/pieCharts/brainDrain';
+import Circles from '../../component/pieCharts/circle';
+import Pie8 from '../../component/pieCharts/pieChart8';
+import NewOldScale from '../../component/run-abll/NewOldScale';
+import TrunRoll from '../../component/trunRoll/trunRoll';
+
 class Test extends Component{
     constructor(props){
         super(props);
@@ -39,6 +44,25 @@ class Test extends Component{
                 </Panel>
                 <Panel title={'pie-chart6'} top={360} left={1200} width={1000} height={300}>
                     <BrainDrain width={600} height={260} left={110} ref='brainDrain' />
+                </Panel>
+                <Panel title={'pie-chart7'} top={700} left={1200} width={1000} height={300}>
+                    <Circles width={150} height={180} left={130} ref={'circle-one'} id={'circle-one'} startColor={'rgba(237,56,108,1)'} endColor={'rgba(237,56,108,.1)'} leftText={170} />
+                    <Circles width={150} height={180} left={420} ref={'circle-two'} id={'circle-two'} startColor={'rgba(2,213,163,1)'} endColor={'rgba(2,213,163,.1)'} leftText={460} />
+                    <Circles width={150} height={180} left={720} ref={'circle-three'} id={'circle-three'} startColor={'rgba(206,204,77,1)'} endColor={'rgba(206,204,77,.1)'} leftText={750} />
+                </Panel>
+                <Panel title={'pie-chart8'} top={700} left={600} width={600} height={300}>
+                    <Pie8 ref={'pieChart8'} width={500} height={240} />
+                </Panel>
+                <Panel title={'pie-chart9'} top={20} left={2200} width={600} height={300}>
+                    <NewOldScale lefts={63} width={166} height={294} left={14} top={0} ref={'year17'} titles={'2017'}/>
+                    <NewOldScale lefts={63} width={166} height={294} left={214} top={0} ref={'year18'} titles={'2018'}/>
+                    <NewOldScale lefts={63} width={166} height={294} left={414} top={0} ref={'year19'} titles={'2019'}/>
+                </Panel>
+                <Panel title={'TrunRoll'} top={360} left={2200} width={600} height={300}>
+                    <TrunRoll/>  
+                </Panel>
+                <Panel title={'RandomBubble'} top={700} left={2200} width={600} height={300}>
+                    
                 </Panel>
             </div>
         )
@@ -101,6 +125,22 @@ class Test extends Component{
         me._tokens.push(api.pieChart6.send({}).then(res => {
           me.refs.brainDrain._setData(res.data)
         }));
+        /* chart7 */
+        me._tokens.push(api.pieChart7.send({
+        }).then(res => {
+          let datas = res.data;
+          this.refs['circle-one']._setData(datas[0])
+          this.refs['circle-two']._setData(datas[1])
+          this.refs['circle-three']._setData(datas[2]);
+        }));
+        /* chart8 */
+        me.refs.pieChart8.setData({
+            data: [10, 20, 30, 50, 30, 20, 10]
+        });
+        /* 水球 */
+        this.refs.year17._setData(42);
+        this.refs.year18._setData(52);
+        this.refs.year19._setData(72);
     }
 }
 export default Test;

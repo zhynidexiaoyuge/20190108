@@ -1,0 +1,21 @@
+{
+    "code": 1,
+    "msg": "success",
+    "data": [
+        {
+            "name": "本月失业再就业人员数量",
+            "value": "56",
+            "valueUnit": null
+        },
+        {
+            "name": "累计就业困难人员数量",
+            "value": "57",
+            "valueUnit": null
+        },
+        {
+            "name": "累计残疾人员数量",
+            "value": "47",
+            "valueUnit": null
+        }
+    ]
+}

@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@jusfoun-vis/common": "^0.1.1",
+    "@jusfoun-vis/threejs-chart": "^0.1.10",
+    "@jusfoun-vis/threejs-common": "^0.1.8",
     "@jusfoun-vis/relativism": "^0.1.3",
     "@jusfoun-vis/scaler": "^0.1.5",
     "animate.css": "^3.7.0",
@@ -15,8 +17,9 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
+    "echarts-wordcloud": "^1.1.3",
     "react-scripts": "2.1.3",
-    "three": "^0.100.0"
+    "three": "^0.92.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -45,3 +45,10 @@ export const pieChart6 = builder.build({
   simulation: true,
   simulator: 'static/api-simulation/pie-chart/pieChart6.json'
 });
+export const pieChart7 = builder.build({
+  baseUrl: builder.BASEURL_01,
+  url: '/',
+  method: 'GET',
+  simulation: true,
+  simulator: 'static/api-simulation/pie-chart/pieChart7.json'
+});
