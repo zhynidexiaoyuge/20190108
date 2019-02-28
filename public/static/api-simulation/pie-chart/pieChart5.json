@@ -6,6 +6,16 @@
             "name": "创业指数",
             "value": "0.7186",
             "valueUnit": null
+        },
+        {
+            "name": "就业指数",
+            "value": "0.3485",
+            "valueUnit": null
+        },
+        {
+            "name": "就业难度指数",
+            "value": "0.2584",
+            "valueUnit": null
         }
     ]
 }

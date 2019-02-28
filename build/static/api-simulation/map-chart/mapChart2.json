@@ -1,0 +1,36 @@
+{
+    "code": 1,
+    "msg": "success",
+    "data": [
+        {
+            "name": "娱乐业",
+            "value": "0.2",
+            "valueUnit": null
+        },
+        {
+            "name": "建筑业",
+            "value": "0.2",
+            "valueUnit": null
+        },
+        {
+            "name": "批发零售",
+            "value": "0.2",
+            "valueUnit": null
+        },
+        {
+            "name": "制造业",
+            "value": "0.2",
+            "valueUnit": null
+        },
+        {
+            "name": "餐饮业",
+            "value": "0.1",
+            "valueUnit": null
+        },
+        {
+            "name": "房地产业",
+            "value": "0.1",
+            "valueUnit": null
+        }
+    ]
+}

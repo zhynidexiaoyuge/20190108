@@ -1,40 +1,40 @@
 import builder from './api-common';
 
-export const pieChart1 = builder.build({
+export const radar1 = builder.build({
   baseUrl: builder.BASEURL_01,
   url: '/',
   method: 'GET',
   simulation: true,
-  simulator: 'static/api-simulation/pie-chart/pieChart1.json'
+  simulator: 'static/api-simulation/radar-chart/radarChart1.json'
 });
 
-export const pieChart2 = builder.build({
+export const radar2 = builder.build({
   baseUrl: builder.BASEURL_01,
   url: '/',
   method: 'GET',
   simulation: true,
-  simulator: 'static/api-simulation/pie-chart/pieChart2.json'
+  simulator: 'static/api-simulation/radar-chart/radarChart2.json'
 });
 
-export const pieChart3 = builder.build({
+export const radar3 = builder.build({
   baseUrl: builder.BASEURL_01,
   url: '/',
   method: 'GET',
   simulation: true,
-  simulator: 'static/api-simulation/pie-chart/pieChart3.json'
+  simulator: 'static/api-simulation/radar-chart/radarChart3.json'
 });
 
-export const pieChart4 = builder.build({
+export const radar4 = builder.build({
   baseUrl: builder.BASEURL_01,
   url: '/',
   method: 'GET',
   simulation: true,
-  simulator: 'static/api-simulation/pie-chart/pieChart4.json'
+  simulator: 'static/api-simulation/radar-chart/radarChart4.json'
 });
-export const pieChart5 = builder.build({
+export const radar5 = builder.build({
   baseUrl: builder.BASEURL_01,
   url: '/',
   method: 'GET',
   simulation: true,
-  simulator: 'static/api-simulation/pie-chart/pieChart5.json'
+  simulator: 'static/api-simulation/radar-chart/radarChart5.json'
 });

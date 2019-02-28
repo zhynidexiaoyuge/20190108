@@ -7,7 +7,7 @@ import BarChart from '../page/bar-chart/BarChart';
 import LineChart from '../page/line-chart/LineChart';
 import RadarChart from '../page/radar-chart/RadarChart';
 import List from '../page/list/List';
-import D3 from '../page/d3/d3';
+import Map from '../page/map/map';
 // 星星
 import RunBall from '../component/run-abll/run-ball';
 import './router.css'
@@ -68,9 +68,9 @@ class NavLinks extends Component{
                         {/* <SubMenu key="sub2" title={<span><Icon type="folder" /><span>d3</span></span>}>
                             
                         </SubMenu> */}
-                        <Menu.Item key="2" className={this.state.name=='d3'? 'itemSelected': ''} onClick={this._navClick.bind(this,'d3')}>
+                        <Menu.Item key="2" className={this.state.name=='map'? 'itemSelected': ''} onClick={this._navClick.bind(this,'map')}>
                             <Icon type="folder" />
-                            <span><NavLink exact to={'/d3'}>d3</NavLink></span>
+                            <span><NavLink exact to={'/map'}>map</NavLink></span>
                         </Menu.Item>
                         <Menu.Item key="3" className={this.state.name=='list'? 'itemSelected': ''} onClick={this._navClick.bind(this,'list')}>
                             <Icon type="ordered-list" />
@@ -95,7 +95,7 @@ class NavLinks extends Component{
                         <Route path="/lineChart" component={LineChart}></Route>
                         <Route path="/radarChart" component={RadarChart}></Route>
                         <Route path="/list" component={List}></Route>
-                        <Route path="/d3" component={D3}></Route>
+                        <Route path="/map" component={Map}></Route>
                     </div>
                 </div>
             </div> 

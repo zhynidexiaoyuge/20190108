@@ -3,18 +3,18 @@
     "msg": "success",
     "data": [
         {
-            "name": "创业指数",
-            "value": "0.7186",
+            "name": "高密",
+            "value": "0.6789",
             "valueUnit": null
         },
         {
-            "name": "就业指数",
-            "value": "0.3485",
+            "name": "全市",
+            "value": "0.4904",
             "valueUnit": null
         },
         {
-            "name": "就业难度指数",
-            "value": "0.2584",
+            "name": "奎文",
+            "value": "0.3456",
             "valueUnit": null
         }
     ]

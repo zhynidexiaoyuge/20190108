@@ -3,28 +3,33 @@
     "msg": "success",
     "data": [
         {
-            "name": "安丘市",
-            "value": "310",
+            "name": "地域",
+            "value": "90",
             "valueUnit": null
         },
         {
-            "name": "潍城区",
-            "value": "254",
+            "name": "地域消费",
+            "value": "80",
             "valueUnit": null
         },
         {
-            "name": "坊子区",
-            "value": "191",
+            "name": "户口",
+            "value": "100",
             "valueUnit": null
         },
         {
-            "name": "奎文区",
+            "name": "福利保证",
             "value": "160",
             "valueUnit": null
         },
         {
-            "name": "其他",
-            "value": "121",
+            "name": "薪酬",
+            "value": "200",
+            "valueUnit": null
+        },
+        {
+            "name": "行业前景",
+            "value": "180",
             "valueUnit": null
         }
     ]

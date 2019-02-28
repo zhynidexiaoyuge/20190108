@@ -7,6 +7,7 @@ import Pie3 from '../../component/pieCharts/pieChart3';
 import Pie4 from '../../component/pieCharts/pieChart4';
 import Pie5 from '../../component/pieCharts/pieChart5';
 import SummaryResults from '../../component/resourceStatus/ResourceStatus';
+import BrainDrain from '../../component/pieCharts/brainDrain';
 class Test extends Component{
     constructor(props){
         super(props);
@@ -31,8 +32,13 @@ class Test extends Component{
                 <Panel title={'pie-chart4'} top={360} left={600} width={600} height={300}>
                     <Pie4 ref="pieChart4" top={40} left={140} ref="pieChart4"/>
                 </Panel>
-                <Panel title={'pie-chart5'} top={700} left={600} width={600} height={300}>
-                    <Pie5 width={300} height={300} left={120} id={1} title={'创业指数'} startColor={'rgba(236,56,108,.3)'} endColor={'rgba(236,56,108,1)'} ref='pieChart5' />
+                <Panel title={'pie-chart5'} top={20} left={1200} width={1000} height={300}>
+                    <Pie5 width={300} height={300} left={40} id={1} title={'创业指数'} startColor={'rgba(236,56,108,.3)'} endColor={'rgba(236,56,108,1)'} ref='gauge1' />
+                    <Pie5 width={300} height={300} left={340} id={2} title={'就业指导'} startColor={'rgba(250,243,60,.3)'} endColor={'rgba(250,243,60,1)'} ref='gauge2' />
+                    <Pie5 width={300} height={300} left={640} id={3} title={'就业难度指数'} startColor={'rgba(1,254,179,.3)'} endColor={'rgba(1,254,179,1)'} ref='gauge3' />
+                </Panel>
+                <Panel title={'pie-chart6'} top={360} left={1200} width={1000} height={300}>
+                    <BrainDrain width={600} height={260} left={110} ref='brainDrain' />
                 </Panel>
             </div>
         )
@@ -87,8 +93,13 @@ class Test extends Component{
         /* chart5 */
         me._tokens.push(api.pieChart5.send({
         }).then(res => {
-            console.log(res)
-            me.refs.pieChart5._setData(Number(res.data[0].value * 100).toFixed(1))
+            me.refs.gauge1._setData(Number(res.data[0].value * 100).toFixed(1))
+            me.refs.gauge2._setData(Number(res.data[1].value * 100).toFixed(1))
+            me.refs.gauge3._setData(Number(res.data[2].value * 100).toFixed(1))
+        }));
+        /* chart6 */
+        me._tokens.push(api.pieChart6.send({}).then(res => {
+          me.refs.brainDrain._setData(res.data)
         }));
     }
 }

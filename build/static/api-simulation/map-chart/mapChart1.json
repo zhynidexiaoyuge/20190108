@@ -1,0 +1,66 @@
+{
+    "code": 1,
+    "msg": "success",
+    "data": [
+        {
+            "name": "寿光",
+            "value": "360",
+            "valueUnit": null
+        },
+        {
+            "name": "诸城",
+            "value": "345",
+            "valueUnit": null
+        },
+        {
+            "name": "青州",
+            "value": "253",
+            "valueUnit": null
+        },
+        {
+            "name": "奎文",
+            "value": "235",
+            "valueUnit": null
+        },
+        {
+            "name": "临朐",
+            "value": "232",
+            "valueUnit": null
+        },
+        {
+            "name": "潍城",
+            "value": "231",
+            "valueUnit": null
+        },
+        {
+            "name": "坊子",
+            "value": "214",
+            "valueUnit": null
+        },
+        {
+            "name": "安丘",
+            "value": "213",
+            "valueUnit": null
+        },
+        {
+            "name": "寒亭",
+            "value": "211",
+            "valueUnit": null
+        },
+        {
+            "name": "高密",
+            "value": "132",
+            "valueUnit": null
+        },
+        {
+            "name": "昌乐",
+            "value": "123",
+            "valueUnit": null
+        },
+        {
+            "name": "昌邑",
+            "value": "122",
+            "valueUnit": null
+        }
+    ]
+}
