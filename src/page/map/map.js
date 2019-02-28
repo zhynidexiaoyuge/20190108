@@ -19,6 +19,7 @@ class Map extends Component{
         });
     }
     render(){
+        const me = this;
         return (
             <div style={{position:'relative'}}>
                 <Panel title={'潍坊地图'} top={20} width={600} height={300}>

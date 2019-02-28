@@ -52,3 +52,10 @@ export const pieChart7 = builder.build({
   simulation: true,
   simulator: 'static/api-simulation/pie-chart/pieChart7.json'
 });
+export const hotWords = builder.build({
+  baseUrl: builder.BASEURL_01,
+  url: '/',
+  method: 'GET',
+  simulation: true,
+  simulator: 'static/api-simulation/pie-chart/hotWord.json'
+});

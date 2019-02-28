@@ -12,12 +12,22 @@ import Circles from '../../component/pieCharts/circle';
 import Pie8 from '../../component/pieCharts/pieChart8';
 import NewOldScale from '../../component/run-abll/NewOldScale';
 import TrunRoll from '../../component/trunRoll/trunRoll';
+import HotWord from '../../component/word-cloud/word-cloud';
 
 class Test extends Component{
     constructor(props){
         super(props);
         this.state = {};
         this._tokens = [];
+
+        /* 实时舆情热词 */
+        this._hotWordProps = {
+        width: '2.77rem',
+        height: '2.98rem',
+        position: 'absolute',
+        left: '0.4rem',
+        top: '4.8rem'
+      };
     }
     render(){
         return (
@@ -62,7 +72,7 @@ class Test extends Component{
                     <TrunRoll/>  
                 </Panel>
                 <Panel title={'RandomBubble'} top={700} left={2200} width={600} height={300}>
-                    
+                    <HotWord width={600} height={300} gridSize={50} ref="_hotWordRef"/>
                 </Panel>
             </div>
         )
@@ -141,6 +151,14 @@ class Test extends Component{
         this.refs.year17._setData(42);
         this.refs.year18._setData(52);
         this.refs.year19._setData(72);
+        /*实时舆情热词*/
+        me._tokens.push(api.hotWords.send({}).then(response => {
+            try{
+                me.refs._hotWordRef._setData(response.data);
+            }catch (e){
+                console.error('出现异常',e)
+            }
+        }));
     }
 }
 export default Test;

@@ -8,12 +8,12 @@ export const map1 = builder.build({
   simulator: 'static/api-simulation/map-chart/mapChart1.json'
 });
 
-export const map2 = builder.build({
+export const ellipseForceDirectedTagCloud = builder.build({
   baseUrl: builder.BASEURL_01,
   url: '/',
   method: 'GET',
   simulation: true,
-  simulator: 'static/api-simulation/map-chart/mapChart2.json'
+  simulator: 'static/api-simulation/map-chart/ellipseForceDirectedTagCloud.json'
 });
 
 export const map3 = builder.build({
