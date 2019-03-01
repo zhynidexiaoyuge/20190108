@@ -1,7 +1,4 @@
 /**
- * 柱状图
- *
- * author   zdd
  */
 import React, { Component } from 'react';
 import echarts from "echarts";

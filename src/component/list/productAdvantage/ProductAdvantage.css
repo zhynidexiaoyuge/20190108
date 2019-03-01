@@ -1,0 +1,39 @@
+.carouselList {
+    display: flex;
+    flex-direction: row;
+    width: 786px;
+    height: 640px;
+    position: relative;
+}
+
+.carouselList > li {
+    width: 360px;
+    height: 640px;
+    background: url("/static/img/turn.png") no-repeat center;
+    background-size: 100% 100%;
+    position:absolute;
+}
+
+.left {
+    top:0;
+    left:0;
+    transform: scale(0.8);
+    opacity:0.5;
+    transition:all 1s;
+}
+
+.center {
+    top:0;
+    left:210px;
+    transform: scale(1);
+    z-index: 1;
+    transition:all 1s;
+}
+
+.right {
+    top:0;
+    left:460px;
+    transform: scale(0.8);
+    opacity:0.5;
+    transition:all 1s;
+}

@@ -14,7 +14,7 @@ class Panel extends Component{
                 <div className="panel-border-top"></div>
                 <div className="panel-border-bottom"></div>
                 <h3 className="panel-title">{this.props.title}</h3>
-                <div className="panel-children">
+                <div className="panel-children" style={{position:'relative'}}>
                     {this.props.children}
                 </div>
             </div>

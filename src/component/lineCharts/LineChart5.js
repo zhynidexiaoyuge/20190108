@@ -3,7 +3,6 @@ import echarts from "echarts";
 
 /*
 * 折线图组件 简单封装
-* @author xf
 * 可用接口：y轴单位，width，height，data
 * */
 

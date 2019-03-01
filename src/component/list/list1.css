@@ -1,0 +1,59 @@
+.list-Box{
+    padding-top: 16px;
+    overflow: hidden;
+}
+.list-Box li p{
+    max-width: 100%;
+    color: #fff;
+    height: 40px;
+    overflow: auto;
+    cursor: pointer;
+}
+.list-Box li{
+    width: 100%;
+    padding: 8px 0px;
+    position: relative;
+}
+.list-Box li.opacity p{
+    opacity: .1;
+    cursor: pointer;
+}
+.list-Box li:nth-child(even){
+    /* background: #f00; */
+}
+.list-Box li span{
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    border: 1px solid #2bcffe;
+    border-radius: 5px;
+    top: 0px;
+    background: rgba(0, 61, 125, .8);
+    color: #fff;
+}
+.list-Box li.opacity span{
+    display: block;
+    cursor: pointer;
+    padding: 0 6px;
+    width: 564px;
+}
+ul.wrapUl{
+    height: 380px;
+    padding: 0 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.listscroll::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 5px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 5px;
+  }
+  .listscroll::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    background: #14ceff;
+  }
+  .listscroll::-webkit-scrollbar-track {/*滚动条里面轨道*/
+   
+    border-radius: 5px;
+    background:#02345b;
+  }
